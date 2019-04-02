@@ -25,7 +25,9 @@ SECRET_KEY = '+ib3u(hgappr09zv0cz8!u2v-9y&efn6tzbn&q8qu^e5&_wq2g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ci-hello-world-medwardsc.c9users.io'
+]
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hello'
 ]
 
 MIDDLEWARE_CLASSES = [
