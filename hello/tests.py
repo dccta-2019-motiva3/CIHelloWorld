@@ -1,3 +1,4 @@
+
 from django.test import Client, TestCase
 #create your tests here
 
@@ -6,10 +7,10 @@ class HelloWorldTest(TestCase):
   def test_reachable(self):
 	#given
 	client = Client()
-	
+
 	#when 
 	response = client.get("/hello_world/")
-    
+
 	#then 
 	self.assertEqual(200, response.status_code)
 
